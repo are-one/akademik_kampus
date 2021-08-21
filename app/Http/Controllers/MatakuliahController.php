@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DataTables;
+use App\Matakuliah;
 
 class MatakuliahController extends Controller
 {
+    function json()
+    {
+        return DataTables::of(Matakuliah::all())->make(true);
+    }
     /**
      * Display a listing of the resource.
      *
