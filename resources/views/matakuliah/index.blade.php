@@ -25,6 +25,7 @@
                                 <th>Nama Matakuliah</th>
                                 <th>Jumlah SKS</th>
                                 <th>Updated At</th>
+                                <th>Aksi</th>
                             </tr>
                         </thead>
                     </table>
@@ -47,7 +48,8 @@ $(function() {
             { data: 'kode_mk', name: 'kode_mk' },
             { data: 'nama_mk', name: 'nama_mk' },
             { data: 'jml_sks', name: 'jml_sks' },
-            { data: 'updated_at', name: 'updated_at' }
+            { data: 'updated_at', name: 'updated_at' },
+            { data: 'action', name:'aksi', orderable: false, searchable: false}
         ]
     });
 });
