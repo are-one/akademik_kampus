@@ -14,6 +14,10 @@
                         </div>
                     @endif
 
+                    <a href="/matakuliah/create" class="btn btn-danger">Input Data Baru</a>
+
+                    <hr>
+
                     <table class="table table-bordered" id="users-table">
                         <thead>
                             <tr>
