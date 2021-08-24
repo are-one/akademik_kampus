@@ -8,7 +8,7 @@
                 <div class="card-header">Input Data Matakuliah</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
+                    {{ Form::open(['url'=>'/matakuliah']) }}
                         @csrf
 
                         <div class="form-group row">

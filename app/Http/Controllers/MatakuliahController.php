@@ -40,7 +40,9 @@ class MatakuliahController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $matakuliah = New Matakuliah();
+        $matakuliah->create($request->all());
+        return redirect('/matakuliah');
     }
 
     /**
